@@ -159,6 +159,61 @@ a {
   font-size: 0.9rem;
 }
 
+/* Grouped navigation.
+   `details` collapses with no JavaScript and stays keyboard operable. The
+   submenu is positioned out of flow so opening one does not shove the page
+   contents down, and `position: relative` on the group anchors it. */
+
+.site-nav__group {
+  position: relative;
+}
+
+.site-nav summary {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.site-nav summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.site-nav__submenu {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  min-width: 12rem;
+  margin: 0.35rem 0 0;
+  padding: 0.5rem 0.75rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+
+/* Stacked inside the panel, so these override the inline-block row above. */
+.site-nav__submenu li {
+  display: block;
+  margin: 0 0 0.35rem;
+}
+
+.site-nav__submenu li:last-child {
+  margin-bottom: 0;
+}
+
+/* Narrow screens have no room for a floating panel beside a wrapped row, so
+   the submenu opens in flow instead and pushes what follows. */
+@media (max-width: 40rem) {
+  .site-nav__submenu {
+    position: static;
+    min-width: 0;
+    border: 0;
+    padding: 0.35rem 0 0 0.75rem;
+  }
+}
+
 /* Answer block — the verdict, first */
 
 .answer {
