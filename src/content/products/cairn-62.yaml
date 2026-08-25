@@ -1,0 +1,58 @@
+# Specifications as published by 3Rivers Archery, 25 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Traditional Only is 3Rivers Archery's own brand, so the maker and the seller
+# are the same business. Recorded here because "brand" and "manufacturer" are
+# not the same thing, and a house brand is worth a reader knowing about.
+#
+# This is the first bow on the takedown recurve page whose seller publishes a
+# brace height. Every other listing there leaves it out.
+name: Traditional Only Cairn 62" Takedown Recurve Bow
+maker: Traditional Only, 3Rivers Archery's own brand
+category: bow
+price:
+  value: 199.99
+  currency: USD
+  source: retailer
+  retailer: 3Rivers Archery
+  checked_on: 2026-08-25
+specs:
+  - label: Length
+    value: 62 in AMO
+    source: maker
+  - label: Draw weight
+    value: 25, 29, 35, 40, 45, 50 or 55 lb at 28 in
+    source: maker
+  - label: Takedown
+    value: "Yes, published as a no-tools thumb bolt system"
+    source: maker
+  - label: Limb fitting
+    value: Proprietary. ILF is not claimed
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as a plunger hole"
+    source: maker
+  - label: Weight mounting
+    value: "Yes, published as a front stabiliser bushing, with ATA accessory holes"
+    source: maker
+  - label: Riser
+    value: Laminated wood
+    source: maker
+  - label: Limbs
+    value: Maple core with black fibreglass face and back
+    source: maker
+  - label: Arrow rest
+    value: Adhesive rest and an elevated rest included, neither fitted
+    source: maker
+  - label: Brace height
+    value: 7 1/2 to 8 1/2 in
+    source: maker
+  - label: In the box
+    value: Bow, endless loop Dacron string, two arrow rests
+    source: maker
+affiliate:
+  merchant: 3Rivers Archery
+  placeholder: "[AFFILIATE: Traditional Only Cairn 62]"
+limitation: It is the most expensive bow on this page at $199.99, the lightest published draw weight is 25 lb, and the limb fitting is proprietary, so heavier limbs come from one seller.
+suits: An archer who wants the most fully specified bow on this page, including the only published brace height, and two arrow rests in the box.
+tradeoff: The Traditional Only Cairn 62" Takedown Recurve Bow publishes more about itself than any other bow on this page, including a brace height nobody else states, and costs $100 more than the cheapest bow here.

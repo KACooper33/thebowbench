@@ -1,0 +1,58 @@
+# Specifications as published by Southwest Archery, 25 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Sold direct by the maker rather than through a retailer, so the price and
+# the specification come from the same party. That is worth noting only
+# because most rows on this page are a retailer restating a maker.
+name: Southwest Archery Spyder 62" Takedown Recurve Bow
+maker: Southwest Archery
+category: bow
+price:
+  value: 149.99
+  currency: USD
+  source: retailer
+  retailer: Southwest Archery
+  checked_on: 2026-08-25
+specs:
+  - label: Length
+    value: 62 in AMO
+    source: maker
+  - label: Draw weight
+    value: 16, 20, 25, 29, 35, 40, 45, 50, 55 or 60 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: Not stated. ILF is not claimed
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as pre-installed threaded bushings for mechanical rests and plungers"
+    source: maker
+  - label: Weight mounting
+    value: "Yes, published as threaded bushings for stabilisers"
+    source: maker
+  - label: Riser
+    value: Four naturally sourced woods
+    source: maker
+  - label: Limbs
+    value: Not stated
+    source: maker
+  - label: Arrow rest
+    value: One adhesive rest included
+    source: maker
+  - label: Brace height
+    value: Not stated
+    source: maker
+  - label: Draw length
+    value: Published as designed for a draw length under 29 in
+    source: maker
+  - label: In the box
+    value: Riser, matched limbs, 62 in Dacron string, adhesive arrow rest, manual
+    source: maker
+affiliate:
+  merchant: Southwest Archery
+  placeholder: "[AFFILIATE: Southwest Archery Spyder 62]"
+limitation: The listing states no limb fitting, so replacement limbs are not confirmed to come from anywhere but Southwest Archery, and it publishes no limb material, no brace height and no mass weight.
+suits: A beginner who wants the widest published draw weight range on this page, starting at 16 lb, with a plunger and stabiliser bushing already fitted.
+tradeoff: The Southwest Archery Spyder 62" Takedown Recurve Bow publishes bushings for a plunger and a stabiliser that the cheaper bows on this page do not, and still says nothing about what its limbs are made of.

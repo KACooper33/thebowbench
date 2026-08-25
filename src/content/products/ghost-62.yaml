@@ -1,0 +1,60 @@
+# Specifications as published by 3Rivers Archery, 25 August 2026.
+# Nothing here was measured on our own bench.
+#
+# The listing does not name a manufacturer behind the Ghost brand, so `maker`
+# records the brand and nothing more. It is not treated as unknown, and it is
+# not guessed at either.
+#
+# This is the only bow on the page whose seller publishes how far the marked
+# draw weight moves with draw length: about 2.5 lb per inch either side of 28
+# in. That is the same class of correction the SAS Spirit needed, published up
+# front rather than buried on a different page.
+name: Ghost 62" Takedown Recurve Bow
+maker: Ghost
+category: bow
+price:
+  value: 179.99
+  currency: USD
+  source: retailer
+  retailer: 3Rivers Archery
+  checked_on: 2026-08-25
+specs:
+  - label: Length
+    value: 62 in. The listing states a 19 1/4 in riser and no AMO figure
+    source: maker
+  - label: Draw weight
+    value: 25 to 60 lb in 5 lb steps at 28 in, moving about 2.5 lb per inch either side. Availability varies by hand
+    source: maker
+  - label: Takedown
+    value: "Yes, published as a no-tools takedown system"
+    source: maker
+  - label: Limb fitting
+    value: Proprietary. ILF is not claimed
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as pre-drilled with a plunger hole"
+    source: maker
+  - label: Weight mounting
+    value: "Yes, published as a stabiliser bushing, with ATA accessory holes"
+    source: maker
+  - label: Riser
+    value: 19 1/4 in laminated wood
+    source: maker
+  - label: Limbs
+    value: Bamboo core with a maple wedge, black fibreglass face and back
+    source: maker
+  - label: Arrow rest
+    value: Not stated
+    source: maker
+  - label: Brace height
+    value: Not stated
+    source: maker
+  - label: In the box
+    value: Bow, Dacron string with finger savers fitted, bow stringer
+    source: maker
+affiliate:
+  merchant: 3Rivers Archery
+  placeholder: "[AFFILIATE: Ghost 62 Takedown Recurve Bow]"
+limitation: The lightest published draw weight is 25 lb, heavier than four other bows on this page, the listing describes no arrow rest, and it names no manufacturer behind the brand.
+suits: An archer who already draws 25 lb and wants a bamboo-core limb, a stringer in the box, and a published figure for how draw weight changes with draw length.
+tradeoff: The Ghost 62" Takedown Recurve Bow ships a stringer and publishes both a plunger hole and a stabiliser bushing, but starts at 25 lb and describes no arrow rest at all.
