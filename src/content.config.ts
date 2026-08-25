@@ -9,8 +9,25 @@ import { z } from 'astro/zod';
  * cannot be forgotten, only broken loudly.
  */
 
-/** Every number states where it came from. CLAUDE.md rule 4. */
-const sourceMark = z.enum(['measured', 'maker']);
+/**
+ * Every number states where it came from. CLAUDE.md rule 4.
+ *
+ * 'retailer' was added on 25 August 2026, when the Ghost 62" turned up facts
+ * that are neither. 3Rivers Archery answers questions on its own product pages
+ * under a "Verified Reply" byline, and those answers carry things the
+ * specification does not: which limbs fit the riser, the tiller it is built
+ * to, a recommended brace height.
+ *
+ * That is a third evidence class. It is not our measurement, and it is not the
+ * maker publishing a figure. Forcing it into 'maker' would say the
+ * manufacturer stated something it did not, which is the kind of quiet
+ * inaccuracy this site exists to avoid. Prices already made the same
+ * distinction for the same reason.
+ *
+ * Use it only for a seller stating something on the record. A forum post is
+ * not a retailer statement, and a guess is not either.
+ */
+const sourceMark = z.enum(['measured', 'maker', 'retailer']);
 
 /**
  * A price has a third possible origin that a spec does not.
@@ -19,7 +36,7 @@ const sourceMark = z.enum(['measured', 'maker']);
  * day it was checked, which is what a reader actually pays. Calling a shop's
  * price a maker price would be false, so it gets its own value.
  *
- * Specs stay measured-or-maker. Only prices may be 'retailer'.
+ * Specs may now be 'retailer' too, for the same reason. See sourceMark above.
  */
 const priceSourceMark = z.enum(['measured', 'maker', 'retailer']);
 
