@@ -8,7 +8,7 @@
  * The footer holds part 9 of the comparison template: author, experience,
  * affiliate disclosure, and the last-updated date.
  */
-import { SITE, HUBS, AFFILIATE_DISCLOSURE } from '../lib/site';
+import { SITE, navGroups, AFFILIATE_DISCLOSURE } from '../lib/site';
 import EmailSignup from '../components/EmailSignup.astro';
 import '../styles/global.css';
 
@@ -20,6 +20,13 @@ interface Props {
 }
 
 const { title, description, updatedOn, jsonLd = [] } = Astro.props;
+
+/**
+ * Grouped rather than a flat row of eight. `details` does the collapsing with
+ * no JavaScript, which this site ships none of, and it stays keyboard
+ * operable and works on touch. A CSS hover menu would do neither.
+ */
+const groups = navGroups();
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const year = new Date().getFullYear();
 
@@ -53,11 +60,26 @@ const documentTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
         <ul>
           <li><a href="/start-here/">Start here</a></li>
           {
-            HUBS.map((hub) => (
-              <li>
-                <a href={`/${hub.path}/`}>{hub.label}</a>
-              </li>
-            ))
+            groups.map((group) =>
+              group.hubs.length === 1 ? (
+                <li>
+                  <a href={`/${group.hubs[0].path}/`}>{group.label}</a>
+                </li>
+              ) : (
+                <li class="site-nav__group">
+                  <details name="site-nav">
+                    <summary>{group.label}</summary>
+                    <ul class="site-nav__submenu">
+                      {group.hubs.map((hub) => (
+                        <li>
+                          <a href={`/${hub.path}/`}>{hub.label}</a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ),
+            )
           }
         </ul>
       </nav>
