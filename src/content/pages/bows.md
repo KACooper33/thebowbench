@@ -6,7 +6,7 @@ description: "Complete beginner bows from $99.95, built setups from $389.95, and
 updated_on: 2026-08-20
 ---
 
-A barebow setup is a riser, a pair of limbs, a plunger and a tab. You can buy that as one box or as separate parts, and this site compares three routes.
+A barebow setup is a riser, a pair of limbs, a string, a tab and arrows. A plunger is tuning equipment rather than a requirement: barebow permits one, and three of the five beginner bows compared here do not publish a plunger thread at all. You can buy the bow as one box or as separate parts, and this site compares three routes.
 
 **A complete beginner takedown bow is the cheapest way to start**, at $99.95 to $159.95 for something you can shoot the day it arrives. The catch is the limb fitting. Four of the five bows compared use their maker's own pattern, so heavier limbs must come from that maker and the riser is one you replace rather than keep. One is ILF and does not have that problem, and it is still not the pick for a beginner, because the lightest limb its maker publishes is 30 lb. The [beginner takedown recurve comparison](/bows/takedown-recurve/) sets out which is which, and what replacement limbs cost where anyone publishes a price.
 
