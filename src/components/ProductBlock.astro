@@ -21,6 +21,9 @@ const { name, price, specs, affiliate, limitation, suits, tradeoff, photo } =
 /** The three-line spec block leads with the headline number. */
 const keySpec = specs.find((spec) => spec.source === 'measured') ?? specs[0];
 
+/** Shown only where a seller states one. Most do not. */
+const warranty = specs.find((spec) => spec.label === 'Warranty');
+
 const priceText = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: price.currency,
@@ -46,8 +49,24 @@ const priceText = new Intl.NumberFormat('en-US', {
           <dd data-source={keySpec.source}>
             {keySpec.value}
             {keySpec.unit ? ` ${keySpec.unit}` : ''}
-            {keySpec.source === 'measured' ? ' (measured)' : ' (maker)'}
+            {keySpec.source === 'measured'
+              ? ' (measured)'
+              : keySpec.source === 'retailer'
+                ? ' (seller)'
+                : ' (maker)'}
           </dd>
+        </div>
+      )
+    }
+
+    {
+      /* Warranty decides a purchase at this price and is not a table column,
+         so it is shown here when a record has it. Absent on most products,
+         which is itself the finding. */
+      warranty && (
+        <div class="product__spec">
+          <dt>Warranty</dt>
+          <dd data-source={warranty.source}>{warranty.value}</dd>
         </div>
       )
     }
