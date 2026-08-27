@@ -54,6 +54,12 @@ specs:
   - label: In the box
     value: Riser, two limbs, dacron string
     source: maker
+  - label: Warranty
+    value: Not stated by Lancaster Archery Supply for this bow
+    source: retailer
+  - label: Returns
+    value: 60 days, return authorisation required, customer pays return shipping. Lancaster Archery Supply, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Lancaster Archery Supply
   placeholder: "[AFFILIATE: Galaxy Aspire 66 Take-Down Recurve Bow]"

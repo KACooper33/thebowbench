@@ -38,6 +38,12 @@ specs:
   - label: In the box
     value: ILF riser, ILF limbs, bowstring, string silencer
     source: maker
+  - label: Warranty
+    value: Not stated
+    source: retailer
+  - label: Returns
+    value: 30 days from delivery, customer pays return shipping. Blackhunter Archery, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Blackhunter Archery
   placeholder: "[AFFILIATE: Black Hunter ILF Recurve Bow]"

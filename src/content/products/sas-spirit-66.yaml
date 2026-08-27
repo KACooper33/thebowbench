@@ -52,6 +52,12 @@ specs:
   - label: In the box
     value: Listed only as one 66 in archery bow. No string, rest or accessories are listed
     source: maker
+  - label: Warranty
+    value: Not stated
+    source: retailer
+  - label: Returns
+    value: 30 days, customer pays return shipping, unused and in original packaging. Sale items not refundable. Southland Archery Supply, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Southland Archery Supply
   placeholder: "[AFFILIATE: SAS Spirit 66 Take Down Recurve Bow]"
