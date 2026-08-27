@@ -42,8 +42,24 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
    * A listing that never mentions a fitting reads "Not stated", not "Not
    * ILF". An omission is not a denial, and the difference is the whole
    * distance between reporting and guessing.
+   *
+   * "Warranty" is last because it is a commercial fact rather than a physical
+   * one, so it sits beside Price and Buy. Like "Mass weight" it is mostly
+   * "Not stated", and like "Mass weight" that absence is the finding: of the
+   * eight bows on the beginner takedown page, one seller publishes a bow
+   * warranty at all. The cell is kept short deliberately. Exclusions, policy
+   * wording and the date read live in the support section and the sources,
+   * because a table cell is for scanning and a policy is not.
    */
-  bow: ['Length', 'Draw weight', 'Mass weight', 'Takedown', 'Limb fitting', 'Plunger threaded'],
+  bow: [
+    'Length',
+    'Draw weight',
+    'Mass weight',
+    'Takedown',
+    'Limb fitting',
+    'Plunger threaded',
+    'Warranty',
+  ],
 };
 
 /** Used when a category has no column list yet. */
