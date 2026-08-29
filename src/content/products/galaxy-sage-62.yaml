@@ -25,7 +25,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Sage fitting, single tapered knob and metal limb pocket. Not ILF
+    value: Proprietary
     source: maker
   - label: Plunger threaded
     value: "Yes, riser listing states brass bushings for a plunger"

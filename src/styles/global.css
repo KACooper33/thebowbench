@@ -89,12 +89,23 @@ main {
 
 /*
   The table sits in the text column like everything else, so the page has one
-  left edge and one right edge.
+  left edge and one right edge. A table that overhangs the text on either side
+  reads as a mistake rather than as emphasis, which is why it does not break
+  out. On a narrow screen it scrolls inside its own box.
 
-  It does not need to break out any more. The reading measure is now wide
-  enough to hold the widest table on the site without scrolling, and a table
-  that overhangs the text on either side reads as a mistake rather than as
-  emphasis. On a narrow screen it still scrolls inside its own box.
+  This comment used to add that the reading measure was wide enough to hold
+  the widest table without scrolling. That stopped being true on 26 August
+  2026, when the bow table reached ten columns and 916 px against a 896 px
+  measure. It now scrolls about 20 px at desktop as well as on mobile.
+
+  Measured before assuming a cause: no single column is at fault. The widest
+  are Warranty at 114 px, Buy at 104 px, and Model and Plunger threaded at
+  97 px each. Long cells wrap rather than stretch, so trimming text recovers
+  almost nothing. Shortening the limb fitting column to one word bought 9 px.
+
+  So the lever is column count, not cell length. Either drop a column, or let
+  the table break out to --wide, which the token was defined for. Both are
+  design calls rather than fixes, so neither is taken here.
 */
 
 h1,

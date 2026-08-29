@@ -27,7 +27,7 @@ specs:
     value: "Yes, published as a no-tools thumb bolt system"
     source: maker
   - label: Limb fitting
-    value: Proprietary. ILF is not claimed
+    value: Proprietary
     source: maker
   - label: Plunger threaded
     value: "Yes, published as a plunger hole"

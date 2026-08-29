@@ -37,7 +37,7 @@ specs:
     value: "Yes, published as a no-tools takedown system"
     source: maker
   - label: Limb fitting
-    value: Proprietary. ILF is not claimed
+    value: Proprietary
     source: maker
   - label: Plunger threaded
     value: "Yes, published as pre-drilled with a plunger hole"

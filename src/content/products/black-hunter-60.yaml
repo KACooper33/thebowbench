@@ -23,7 +23,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Not stated. ILF is not claimed for this model
+    value: Not stated
     source: maker
   - label: Plunger threaded
     value: Not stated

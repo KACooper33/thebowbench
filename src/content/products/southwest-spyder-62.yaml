@@ -24,7 +24,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Not stated. ILF is not claimed
+    value: Not stated
     source: maker
   - label: Plunger threaded
     value: "Yes, published as pre-installed threaded bushings for mechanical rests and plungers"

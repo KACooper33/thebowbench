@@ -24,7 +24,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: "ILF, published as standard International Limb Fitting"
+    value: ILF
     source: maker
   - label: Plunger threaded
     value: Not stated. The listing describes no bushings of any kind
