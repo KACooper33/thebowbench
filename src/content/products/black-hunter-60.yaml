@@ -23,7 +23,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Not stated. ILF is not claimed for this model
+    value: Not stated
     source: maker
   - label: Plunger threaded
     value: Not stated
@@ -35,6 +35,12 @@ specs:
   - label: In the box
     value: Wooden riser, two limbs, string, spanner, arm guard, finger tab, string silencer, wax, stringer
     source: maker
+  - label: Warranty
+    value: Not stated
+    source: retailer
+  - label: Returns
+    value: 30 days from delivery, customer pays return shipping. Blackhunter Archery, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Blackhunter Archery
   placeholder: "[AFFILIATE: Black Hunter 60 Take Down]"

@@ -37,7 +37,7 @@ specs:
     value: "Yes, published as a no-tools takedown system"
     source: maker
   - label: Limb fitting
-    value: Proprietary. ILF is not claimed
+    value: Proprietary
     source: maker
   - label: Plunger threaded
     value: "Yes, published as pre-drilled with a plunger hole"
@@ -66,6 +66,12 @@ specs:
   - label: In the box
     value: Bow, Dacron string with finger savers fitted, bow stringer
     source: maker
+  - label: Warranty
+    value: None from 3Rivers Archery. Its policy points to the manufacturer, and this is a 3Rivers house brand
+    source: retailer
+  - label: Returns
+    value: 30 days, customer pays return shipping. After 30 days a 20 percent restocking charge applies, minimum $5. 3Rivers Archery, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: 3Rivers Archery
   placeholder: "[AFFILIATE: Ghost 62 Takedown Recurve Bow]"

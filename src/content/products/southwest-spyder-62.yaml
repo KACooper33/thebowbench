@@ -24,7 +24,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Not stated. ILF is not claimed
+    value: Not stated
     source: maker
   - label: Plunger threaded
     value: "Yes, published as pre-installed threaded bushings for mechanical rests and plungers"
@@ -50,6 +50,12 @@ specs:
   - label: In the box
     value: Riser, matched limbs, 62 in Dacron string, adhesive arrow rest, manual
     source: maker
+  - label: Warranty
+    value: One year against manufacturer defect, original owner only
+    source: retailer
+  - label: Returns
+    value: Window not stated. Southwest Archery, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Southwest Archery
   placeholder: "[AFFILIATE: Southwest Archery Spyder 62]"

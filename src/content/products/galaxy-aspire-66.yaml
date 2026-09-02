@@ -34,7 +34,7 @@ specs:
     value: 2.25 lb with limbs
     source: maker
   - label: Limb fitting
-    value: "Non-ILF, stated by the seller for both the bow and the limbs"
+    value: Proprietary
     source: maker
   - label: Replacement limbs
     value: $59.99 the pair. Short limbs make a 66 in bow, long limbs make a 70 in bow
@@ -54,6 +54,12 @@ specs:
   - label: In the box
     value: Riser, two limbs, dacron string
     source: maker
+  - label: Warranty
+    value: Not stated by Lancaster Archery Supply
+    source: retailer
+  - label: Returns
+    value: 60 days, return authorisation required, customer pays return shipping. Lancaster Archery Supply, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Lancaster Archery Supply
   placeholder: "[AFFILIATE: Galaxy Aspire 66 Take-Down Recurve Bow]"

@@ -29,7 +29,7 @@ specs:
     value: Not stated. The listing describes no bushings of any kind
     source: maker
   - label: Limb fitting
-    value: "Bolt-down SAS Spirit pattern, sized 54 in Jr or 62/66 in. Not ILF"
+    value: Proprietary
     source: maker
   - label: Replacement limbs
     value: $54.99 the pair, published for the 62 and 66 in bows
@@ -52,6 +52,12 @@ specs:
   - label: In the box
     value: Listed only as one 66 in archery bow. No string, rest or accessories are listed
     source: maker
+  - label: Warranty
+    value: Not stated
+    source: retailer
+  - label: Returns
+    value: 30 days, customer pays return shipping, unused and in original packaging. Sale items not refundable. Southland Archery Supply, read 25 August 2026
+    source: retailer
 affiliate:
   merchant: Southland Archery Supply
   placeholder: "[AFFILIATE: SAS Spirit 66 Take Down Recurve Bow]"
