@@ -57,7 +57,7 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
    * "Warranty" is last because it is a commercial fact rather than a physical
    * one, so it sits beside Price and Buy. Like "Mass weight" it is mostly
    * "Not stated", and like "Mass weight" that absence is the finding: of the
-   * eight bows on the beginner takedown page, one seller publishes a bow
+   * ten bows on the beginner takedown page, two sellers publish a bow
    * warranty at all. The cell is kept short deliberately. Exclusions, policy
    * wording and the date read live in the support section and the sources,
    * because a table cell is for scanning and a policy is not.

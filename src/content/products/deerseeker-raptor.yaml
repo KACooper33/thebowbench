@@ -1,0 +1,70 @@
+# Specifications as published by Deerseeker Archery on its own site,
+# 2 September 2026. Nothing here was measured on our own bench.
+#
+# The maker's site and its Amazon listing disagree on the lightest draw
+# weight: 30 lb on the maker's page, 20 lb on the retail listing. Both are
+# recorded rather than one being chosen. This is the third bow on the takedown
+# page whose draw weight differs between two of its seller's own pages, after
+# the Galaxy Sage and the SAS Spirit.
+#
+# Source titles for this bow are written by hand. The maker's own marketing
+# copy and the Amazon listing title both carry out-of-scope terms that
+# scripts/check-content.mjs fails the build on.
+name: Deerseeker Raptor 62" Takedown Recurve Bow
+maker: Deerseeker Archery
+category: bow
+price:
+  value: 83.90
+  currency: USD
+  source: retailer
+  retailer: Deerseeker Archery
+  checked_on: 2026-09-02
+specs:
+  - label: Length
+    value: 62 in, with a 19 in riser
+    source: maker
+  - label: Draw weight
+    value: 30 to 60 lb on the maker's own page. Its Amazon listing publishes 20 to 60 lb for the same bow
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: Proprietary
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as pre-installed threaded bushings taking a brass plunger"
+    source: maker
+  - label: Weight mounting
+    value: "Yes, published as threaded bushings taking a stabiliser"
+    source: maker
+  - label: Limb pocket
+    value: Aluminium pockets, published as giving exact limb placement. ILF is not claimed
+    source: maker
+  - label: Riser
+    value: Dymondwood, published as high density
+    source: maker
+  - label: Limbs
+    value: Fibreglass laminated over a bamboo core
+    source: maker
+  - label: Brace height
+    value: Not stated
+    source: maker
+  - label: Arrow rest
+    value: Included
+    source: maker
+  - label: In the box
+    value: Bow, string, stringer tool, finger tab, arm guard, arrow rest, Allen key
+    source: maker
+  - label: Warranty
+    value: One year, published by the maker as a guarantee. Terms not detailed
+    source: retailer
+  - label: Returns
+    value: Not stated on the maker's own site
+    source: retailer
+affiliate:
+  merchant: Deerseeker Archery
+  placeholder: "[AFFILIATE: Deerseeker Raptor 62 Takedown Recurve Bow]"
+limitation: The maker's own page and its Amazon listing disagree on the lightest draw weight, 30 lb against 20 lb, and the maker publishes no brace height, no mass weight and no returns window.
+suits: A beginner who wants the cheapest complete bow on this page and the most accessories in the box, and who can confirm the draw weight before ordering.
+tradeoff: The Deerseeker Raptor 62" Takedown Recurve Bow is the cheapest bow on this page at $83.90 and one of only two publishing a warranty, but its two listings do not agree on what the lightest limbs weigh.
