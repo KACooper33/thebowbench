@@ -173,18 +173,48 @@ a {
 /* Grouped navigation.
    `details` collapses with no JavaScript and stays keyboard operable. The
    submenu is positioned out of flow so opening one does not shove the page
-   contents down, and `position: relative` on the group anchors it. */
+   contents down, and `position: relative` on the group anchors it.
+
+   Every submenu rule below is written as `.site-nav ul.site-nav__submenu` or
+   tighter. `.site-nav ul` earlier in this file is a class plus an element, so
+   it outranks a lone class and was silently winning: the panel computed
+   `padding: 0` and took the 0.75rem list margin, which is why its links sat
+   flush against the border. Keep the specificity when editing these. */
 
 .site-nav__group {
   position: relative;
 }
 
+/* The default disclosure triangle differs between engines and sat oddly next
+   to a serif wordmark, so it is replaced with one caret that rotates. */
 .site-nav summary {
   font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 0.9rem;
   cursor: pointer;
   color: var(--accent);
   text-decoration: underline;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.site-nav summary::-webkit-details-marker {
+  display: none;
+}
+
+.site-nav summary::after {
+  content: '';
+  width: 0.32rem;
+  height: 0.32rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-0.12em) rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.site-nav details[open] > summary::after {
+  transform: translateY(0.06em) rotate(-135deg);
 }
 
 .site-nav summary:focus-visible {
@@ -192,36 +222,71 @@ a {
   outline-offset: 2px;
 }
 
-.site-nav__submenu {
+/* Opens below the header rule rather than across it. The offset is the
+   header's own 1.25rem bottom padding plus a hair, because the panel is
+   positioned against the nav item while the rule sits at the foot of that
+   padding. Change one and the other needs checking.
+
+   The shadow makes it read as floating above the page, and width follows the
+   longest label rather than a fixed 12rem, which left "Risers" trailing an
+   inch of empty panel. */
+.site-nav ul.site-nav__submenu {
   position: absolute;
   z-index: 10;
-  top: 100%;
-  left: 0;
-  min-width: 12rem;
-  margin: 0.35rem 0 0;
-  padding: 0.5rem 0.75rem;
+  top: calc(100% + 1.5rem);
+  /* Negative by exactly the panel's own left padding, so the submenu labels
+     line up with the trigger label above them rather than sitting 2px in. */
+  left: -0.9rem;
+  min-width: max-content;
+  margin: 0;
+  padding: 0.45rem 0.9rem 0.5rem;
   background: var(--paper);
   border: 1px solid var(--rule);
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+
+/* A black shadow does nothing on a dark ground, so the panel is separated by
+   a stronger border instead. */
+@media (prefers-color-scheme: dark) {
+  .site-nav ul.site-nav__submenu {
+    box-shadow: 0 2px 10px rgb(0 0 0 / 45%);
+    border-color: var(--ink-soft);
+  }
 }
 
 /* Stacked inside the panel, so these override the inline-block row above. */
-.site-nav__submenu li {
+.site-nav ul.site-nav__submenu li {
   display: block;
-  margin: 0 0 0.35rem;
+  margin: 0;
+  line-height: 1.5;
 }
 
-.site-nav__submenu li:last-child {
-  margin-bottom: 0;
+.site-nav ul.site-nav__submenu a {
+  display: block;
+  padding-block: 0.28rem;
+  white-space: nowrap;
 }
 
 /* Narrow screens have no room for a floating panel beside a wrapped row, so
    the submenu opens in flow instead and pushes what follows. */
 @media (max-width: 40rem) {
-  .site-nav__submenu {
+  /* Top level items stack, one per line. While they were inline-block, an
+     open group grew tall and the items after it wrapped alongside the open
+     submenu instead of below it, so "Accessories" and "Arrows" ended up
+     level with "Limbs". Stacking also gives each a full-width tap target. */
+  .site-nav > ul > li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .site-nav ul.site-nav__submenu {
     position: static;
     min-width: 0;
+    margin: 0.15rem 0 0.35rem;
+    padding: 0 0 0 0.9rem;
     border: 0;
-    padding: 0.35rem 0 0 0.75rem;
+    border-left: 2px solid var(--rule);
+    box-shadow: none;
   }
 }
 
