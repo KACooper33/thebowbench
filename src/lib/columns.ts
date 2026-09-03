@@ -62,10 +62,16 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
    * Bolt-down still means limbs must match that pattern. It is a description
    * of the mechanism, not a promise that any bolt-down limb fits.
    *
-   * "Not stated" is not a synonym for either. The Black Hunter 60" names no
-   * fitting at all, and filling that in would be inference rather than
-   * reporting, which is the distinction the paragraph above exists to
-   * protect.
+   * The three fittings are exhaustive for a takedown recurve, which is what
+   * makes bolt-down safe to record where a seller names nothing. A bow whose
+   * limbs come off is ILF, Formula, or bolt-down; there is no fourth
+   * mechanism. The Black Hunter 60" is the case: its seller names no fitting,
+   * but the bow is published as a takedown, does not claim ILF, and the same
+   * maker sells a separate ILF model, so the absence is deliberate.
+   *
+   * "Not stated" is still available and currently unused. It belongs where the
+   * category itself is genuinely open, not merely where a seller was silent
+   * inside a closed set.
    *
    * "Warranty" is last because it is a commercial fact rather than a physical
    * one, so it sits beside Price and Buy. Like "Mass weight" it is mostly
