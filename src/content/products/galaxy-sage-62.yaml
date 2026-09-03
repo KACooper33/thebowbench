@@ -25,7 +25,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Proprietary
+    value: Bolt-down
     source: maker
   - label: Plunger threaded
     value: "Yes, riser listing states brass bushings for a plunger"
@@ -50,4 +50,4 @@ affiliate:
   placeholder: "[AFFILIATE: Galaxy Sage 62]"
 limitation: The limb fitting is the Sage pattern rather than ILF, so heavier limbs must be Sage limbs, and the two brands publish different draw weight ranges for the same bow.
 suits: An archer who wants a plunger bushing and a known upgrade path within one maker's range, at the price of a complete bow.
-tradeoff: The Galaxy Sage 62" costs $9.97 less than the Black Hunter ILF and publishes a plunger bushing the ILF bow does not, in exchange for limbs that must come from one maker.
+tradeoff: The Galaxy Sage 62" publishes a plunger bushing that three of the eight bows on this page do not, in exchange for a bolt-down fitting whose limbs must come from one maker at $79.99 a pair.

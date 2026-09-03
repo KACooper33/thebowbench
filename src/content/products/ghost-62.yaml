@@ -9,6 +9,10 @@
 # Southwest Archery as the manufacturer. The contract manufacturer is not
 # named anywhere on the listing. `maker` records what is actually established.
 #
+# No Samick Sage limb compatibility is published for this bow. The only limb
+# compatibility 3Rivers states is with its own Cairn and Edge limbs, so it does
+# not belong in the Sage group on the takedown page.
+#
 # Three figures below come from that Verified Reply Q&A rather than the
 # specification, and are marked `retailer` to keep the two apart. A staff
 # recommendation in a question thread is not a published spec.
@@ -37,7 +41,7 @@ specs:
     value: "Yes, published as a no-tools takedown system"
     source: maker
   - label: Limb fitting
-    value: Proprietary
+    value: Bolt-down
     source: maker
   - label: Plunger threaded
     value: "Yes, published as pre-drilled with a plunger hole"

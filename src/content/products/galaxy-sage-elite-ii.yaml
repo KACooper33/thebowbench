@@ -1,0 +1,75 @@
+# Specifications as published by Lancaster Archery Supply, 2 September 2026.
+# Nothing here was measured on our own bench.
+#
+# The name is the trap on this bow. Lancaster describes the Galaxy Sage as a
+# "single tapered knob and metal limb pocket design" and the Sage Elite II as
+# a "two-pin limb and limb pocket system". Two different fittings, described
+# by the same seller, under the same model name.
+#
+# The page reports that as what each listing says. It does not claim the limbs
+# will not interchange, because nobody here has tried a Sage limb in an Elite
+# II riser.
+#
+# This is the only bow on the takedown page whose seller publishes both a mass
+# weight and a brace height.
+name: Galaxy Sage Elite II Takedown Recurve Bow
+maker: Galaxy Archery
+category: bow
+price:
+  value: 199.98
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-09-02
+specs:
+  - label: Length
+    value: 62 in AMO
+    source: maker
+  - label: Draw weight
+    value: 20 to 55 lb in 5 lb steps at 28 in
+    source: maker
+  - label: Mass weight
+    value: 2.3 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: Bolt-down
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as bushings for plunger, stabilizer and sight/quiver"
+    source: maker
+  - label: Weight mounting
+    value: "Yes, published as a stabiliser bushing"
+    source: maker
+  - label: Limb pocket
+    value: Two-pin limb and limb pocket system, described as improving top and bottom limb alignment. The Galaxy Sage is described as a single tapered knob instead
+    source: maker
+  - label: Riser
+    value: Enhanced laminated hardwoods, cut past centre with a crowned shelf. Lancaster describes the riser as a next-generation Sage, refined and reinforced. Sold separately at $79.99
+    source: maker
+  - label: Limbs
+    value: Hard maple and black fibreglass, phenolic reinforced tips
+    source: maker
+  - label: Brace height
+    value: 7 to 8 in recommended
+    source: maker
+  - label: Arrow rest
+    value: Stick-on rest included
+    source: maker
+  - label: In the box
+    value: Riser, limbs, stick-on rest, nok-set, string
+    source: maker
+  - label: Warranty
+    value: Not stated by Lancaster Archery Supply
+    source: retailer
+  - label: Returns
+    value: 60 days, return authorisation required, customer pays return shipping. Lancaster Archery Supply, read 25 August 2026
+    source: retailer
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Sage Elite II Takedown Recurve Bow]"
+limitation: It is the most expensive bow on this page at $199.98, and its two-pin limb pocket is described differently from the Galaxy Sage's single tapered knob, so limbs bought for one are not confirmed to fit the other.
+suits: A beginner who wants the best documented bow on this page, with a published mass weight, a published brace height and bushings for a plunger.
+tradeoff: The Galaxy Sage Elite II Takedown Recurve Bow is the only bow here whose seller publishes both a mass weight and a brace height, and it costs $50 more than the Galaxy Sage that shares its name.

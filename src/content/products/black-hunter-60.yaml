@@ -1,7 +1,7 @@
 # Specifications as published by Blackhunter Archery, 14 August 2026.
 # Nothing here was measured on our own bench.
 #
-# Brand name allowlisted. See black-hunter-ilf.yaml and ALLOWED_NAMES in
+# Brand name allowlisted. See ALLOWED_NAMES in
 # scripts/check-content.mjs.
 name: Black Hunter 60" Take Down Recurve Bow
 maker: Blackhunter Archery
@@ -22,8 +22,14 @@ specs:
   - label: Takedown
     value: "Yes"
     source: maker
+  # Blackhunter names no fitting for this model. It is recorded as bolt-down
+  # rather than left blank because the three fittings are exhaustive for a
+  # takedown recurve: ILF, Formula, or bolt-down. This bow is published as a
+  # takedown, does not claim ILF, and its maker sells a separate ILF model,
+  # so the absence is deliberate. Bolt-down is what is left, not a guess at an
+  # unpublished detail.
   - label: Limb fitting
-    value: Not stated
+    value: Bolt-down
     source: maker
   - label: Plunger threaded
     value: Not stated
