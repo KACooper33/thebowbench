@@ -1,7 +1,7 @@
 # Specifications as published by Blackhunter Archery, 14 August 2026.
 # Nothing here was measured on our own bench.
 #
-# Brand name allowlisted. See black-hunter-ilf.yaml and ALLOWED_NAMES in
+# Brand name allowlisted. See ALLOWED_NAMES in
 # scripts/check-content.mjs.
 name: Black Hunter 60" Take Down Recurve Bow
 maker: Blackhunter Archery
