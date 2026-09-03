@@ -41,7 +41,7 @@ specs:
     value: "Yes, published as a no-tools takedown system"
     source: maker
   - label: Limb fitting
-    value: Proprietary
+    value: Bolt-down
     source: maker
   - label: Plunger threaded
     value: "Yes, published as pre-drilled with a plunger hole"

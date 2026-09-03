@@ -24,7 +24,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Proprietary
+    value: Bolt-down
     source: maker
   - label: Limb compatibility
     value: Southwest Archery publishes that its Spyder riser fits Samick Sage and Samick Journey limbs, as well as its own Spyder, Spyder XL, Tiger and TigerShark
@@ -62,6 +62,6 @@ specs:
 affiliate:
   merchant: Southwest Archery
   placeholder: "[AFFILIATE: Southwest Archery Spyder 62]"
-limitation: The bow listing names no limb fitting and publishes no limb material, no brace height and no mass weight, so most of what is known about the fitting comes from the maker's separate riser listing rather than from the bow's own page.
+limitation: The bow listing names no limb fitting and publishes no limb material, no brace height and no mass weight, so most of what is known about the fitting comes from the maker's separate riser listing rather than from the bow's own page. Bolt-down is not an interchange standard, so limbs still have to match this pattern rather than any bolt-down bow.
 suits: A beginner who wants the widest published draw weight range on this page, starting at 16 lb, with a plunger and stabiliser bushing already fitted.
 tradeoff: The Southwest Archery Spyder 62" Takedown Recurve Bow is the only bow on this page whose maker publishes that another brand's limbs fit it, which widens where replacement limbs can come from, and it still says nothing about what its own limbs are made of.

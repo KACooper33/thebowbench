@@ -34,7 +34,7 @@ specs:
     value: 2.25 lb with limbs
     source: maker
   - label: Limb fitting
-    value: Proprietary
+    value: Bolt-down
     source: maker
   - label: Replacement limbs
     value: $59.99 the pair. Short limbs make a 66 in bow, long limbs make a 70 in bow

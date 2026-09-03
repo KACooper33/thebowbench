@@ -25,7 +25,7 @@ specs:
     value: "Yes"
     source: maker
   - label: Limb fitting
-    value: Proprietary
+    value: Bolt-down
     source: maker
   - label: Plunger threaded
     value: "Yes, riser listing states brass bushings for a plunger"

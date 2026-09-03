@@ -43,15 +43,28 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
    * ILF". An omission is not a denial, and the difference is the whole
    * distance between reporting and guessing.
    *
-   * The cell takes one of exactly three values: "ILF", "Proprietary" or
-   * "Not stated". A reader scanning the column wants to know whether other
-   * makers' limbs fit, and that is a yes, a no, or an unknown. Which
-   * proprietary pattern it is belongs in the product record and the page
-   * prose, not in a cell being compared down a column.
+   * The cell uses the sport's own vocabulary for limb fittings: "ILF",
+   * "Formula" and "Bolt-down", plus "Not stated" where a seller names none.
    *
-   * "Not stated" is not a synonym for "Proprietary". Two bows here name no
-   * fitting at all, and calling those proprietary would be inference rather
-   * than reporting, which is the distinction the paragraph above exists to
+   * ILF and Formula are interchange standards, so limbs cross between makers.
+   * Bolt-down is not a standard at all: it is the category for limbs that bolt
+   * straight to the riser on a pattern the maker chose. Formula appears here
+   * for completeness and is not yet used, because it is a high end Hoyt
+   * fitting and nothing on the beginner page carries it.
+   *
+   * "Bolt-down" replaced "Proprietary" on 2 September 2026, and the change
+   * fixed an error rather than only renaming things. Proprietary asserts that
+   * limbs come from one maker. Bolt-down describes how they attach. Those are
+   * not the same claim, and the Southwest Spyder is the proof: it is bolt-down
+   * and Southwest publishes that Samick Sage and Journey limbs fit it, so
+   * calling it proprietary contradicted its own record.
+   *
+   * Bolt-down still means limbs must match that pattern. It is a description
+   * of the mechanism, not a promise that any bolt-down limb fits.
+   *
+   * "Not stated" is not a synonym for either. The Black Hunter 60" names no
+   * fitting at all, and filling that in would be inference rather than
+   * reporting, which is the distinction the paragraph above exists to
    * protect.
    *
    * "Warranty" is last because it is a commercial fact rather than a physical
