@@ -34,8 +34,28 @@ interface Props {
 }
 
 const { page, products, children_pages = [] } = Astro.props;
+
 const { title, description, answer_block, verdict, method, faq, updated_on, related_hub, sources } =
   page.data;
+
+/**
+ * PROJECT_PLAN.md section 4 names this section "How I measured this", and on a
+ * page carrying measured figures that is right. On a page whose method opens
+ * "Nothing on this page was measured or shot" it promises an account of work
+ * that was not done.
+ *
+ * The heading follows the data instead. Only the youth recurve page currently
+ * has a measured spec, so every other comparison says what it actually is:
+ * a statement of what was and was not tested. That serves the plan's own
+ * description of the section, "what you weighed, what tools you used, what you
+ * did not test", better than the fixed wording does.
+ */
+const hasMeasured = products.some((product) =>
+  product.data.specs.some((spec) => spec.source === 'measured'),
+);
+const methodHeading = hasMeasured
+  ? 'How I measured this'
+  : 'What was and was not tested';
 
 const parentPath = page.id.includes('/') ? page.id.split('/')[0] : null;
 const parentHub = HUBS.find((hub) => hub.path === parentPath);
@@ -65,7 +85,7 @@ const jsonLd = [
     {
       method && (
         <section class="method">
-          <h2>How I measured this</h2>
+          <h2>{methodHeading}</h2>
           <p>{method}</p>
         </section>
       )
