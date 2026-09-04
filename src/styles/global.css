@@ -290,6 +290,99 @@ a {
   }
 }
 
+/* Collapsible analysis sections.
+   The marker is drawn here rather than left to the browser, because engines
+   disagree on it and a native triangle beside a serif heading looks wrong. */
+
+.collapse {
+  border-top: 1px solid var(--rule);
+  margin-block: 0;
+}
+
+.collapse__summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.collapse__summary::-webkit-details-marker {
+  display: none;
+}
+
+/* The heading keeps its own margins, so the caret is aligned to the text
+   baseline rather than to the box. */
+.collapse__summary h2 {
+  margin-block: 1.15rem 1.15rem;
+  font-size: 1.25rem;
+}
+
+.collapse__summary::before {
+  content: '';
+  flex: none;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.collapse[open] > .collapse__summary::before {
+  transform: rotate(-135deg);
+}
+
+.collapse__summary:hover h2 {
+  color: var(--accent);
+}
+
+.collapse__summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.collapse__body {
+  padding-bottom: 0.75rem;
+}
+
+/* The first child of an opened section sits directly under the heading, so it
+   does not need its own top margin. */
+.collapse__body > :first-child {
+  margin-top: 0;
+}
+
+/* A run of collapsed sections is one visual block, so the spacing rules are
+   about entering and leaving it rather than about each row.
+
+   Inside a run the rows sit flush and are separated by their top rules. That
+   is deliberate: they read as a list of headings.
+
+   Entering one needed fixing. `.collapse` has no top margin, so a collapsed
+   section following a paragraph inherited only that paragraph's 16px bottom
+   margin, exactly the gap between two paragraphs. A new section looked like a
+   continuation of the last one. */
+:not(.collapse) + .collapse {
+  margin-top: 2.75rem;
+}
+
+/* Leaving one needs the same, plus a rule to close the block, or the next open
+   heading looks attached to the final row. */
+.collapse:not(:has(+ .collapse)) {
+  border-bottom: 1px solid var(--rule);
+}
+
+.collapse + :not(.collapse) {
+  margin-top: 2.75rem;
+}
+
+/* Except at the very end of the body, where the sources section draws its own
+   top rule 32px below. Both together printed two horizontal lines close enough
+   to read as a mistake. The sources rule is the one that belongs there. */
+.page__body > .collapse:last-child {
+  border-bottom: 0;
+}
+
 /* Answer block — the verdict, first */
 
 .answer {

@@ -1,0 +1,35 @@
+---
+/**
+ * A collapsible analysis section.
+ *
+ * The takedown recurve page reached fifteen prose sections and about 5,300
+ * words after its product blocks, which reads as a wall. The detail sections
+ * collapse; the sections that decide a purchase stay open, so a reader who
+ * never clicks still gets the verdict, the families and the support table.
+ *
+ * The heading stays a real `h2` inside the `summary`, which HTML allows. The
+ * document outline is unchanged and the headings are still there for search
+ * and for AI extraction, which matters because PROJECT_PLAN section 7 is built
+ * on being quotable. Collapsed content is in the DOM and is indexed; what is
+ * lost is a reader seeing it without clicking, which is why the split above
+ * is deliberate rather than applied to everything.
+ *
+ * `details` needs no JavaScript, and this site ships none.
+ */
+interface Props {
+  title: string;
+  /** Open by default. Use for anything a reader must not miss. */
+  open?: boolean;
+}
+
+const { title, open = false } = Astro.props;
+---
+
+<details class="collapse" open={open}>
+  <summary class="collapse__summary">
+    <h2>{title}</h2>
+  </summary>
+  <div class="collapse__body">
+    <slot />
+  </div>
+</details>
