@@ -1,0 +1,70 @@
+# Specifications as published by Southland Archery Supply, 3 September 2026.
+# Nothing here was measured on our own bench.
+#
+# This is the same bow as the Galaxy Sage 62" already on the takedown page.
+# Galaxy is the United States brand for Samick-made bows, and the two listings
+# describe the same limb pocket in the same words: "Single Tapered Knob and
+# Metal Limb Pocket Design".
+#
+# It is carried as its own row because the two sell for different money and
+# publish different things. Southland lists this at $109.99 where Lancaster
+# lists the Galaxy Sage at $149.98, and Southland publishes a brace height
+# that the Galaxy listing does not. A reader comparing prices should see both.
+#
+# Stock is not recorded. It varies by draw weight and hand and would be stale
+# within a week.
+name: Samick Sage 62" Takedown Recurve Bow
+maker: Samick
+category: bow
+price:
+  value: 109.99
+  currency: USD
+  source: retailer
+  retailer: Southland Archery Supply
+  checked_on: 2026-09-03
+specs:
+  - label: Length
+    value: 62 in
+    source: maker
+  - label: Draw weight
+    value: 20, 25, 30, 35, 40, 45, 50, 55 or 60 lb at a 28 in draw
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: Bolt-down
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as pre-installed brass bushings for a brass plunger"
+    source: maker
+  - label: Weight mounting
+    value: "Yes, published as pre-installed brass bushings for a stabiliser"
+    source: maker
+  - label: Brace height
+    value: 7 1/4 to 8 1/4 in
+    source: maker
+  - label: Limbs
+    value: Hard maple with black fibreglass
+    source: maker
+  - label: Arrow rest
+    value: Included
+    source: maker
+  - label: Draw length
+    value: Published as a 29 in maximum
+    source: maker
+  - label: In the box
+    value: Bow, B-50 string, arrow rest
+    source: maker
+  - label: Warranty
+    value: Not stated
+    source: retailer
+  - label: Returns
+    value: 30 days, customer pays return shipping, unused and in original packaging. Sale items not refundable. Southland Archery Supply, read 25 August 2026
+    source: retailer
+affiliate:
+  merchant: Southland Archery Supply
+  placeholder: "[AFFILIATE: Samick Sage 62 Takedown Recurve Bow]"
+limitation: This is the same bow as the Galaxy Sage 62", so nothing about it is a separate design choice. Its seller publishes no mass weight, and its limb pocket is bolt-down, so heavier limbs come from one maker.
+suits: Anyone who was going to buy the Galaxy Sage and would rather pay $39.99 less for the same bow under its original name.
+tradeoff: The Samick Sage 62" Takedown Recurve Bow is $39.99 cheaper than the identical Galaxy Sage 62" and publishes a brace height the Galaxy listing omits, but it is sold by a seller that states no bow warranty.
