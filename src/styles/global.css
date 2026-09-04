@@ -352,6 +352,18 @@ a {
   margin-top: 0;
 }
 
+/* Leaving a run of collapsed sections needs more than a heading margin. Each
+   collapsed row carries a top rule, so consecutive ones read as one list, and
+   the next open heading looked attached to the last row rather than starting
+   something new. This closes the run and separates what follows. */
+.collapse:not(:has(+ .collapse)) {
+  border-bottom: 1px solid var(--rule);
+}
+
+.collapse + :not(.collapse) {
+  margin-top: 2.75rem;
+}
+
 /* Answer block — the verdict, first */
 
 .answer {
