@@ -352,16 +352,35 @@ a {
   margin-top: 0;
 }
 
-/* Leaving a run of collapsed sections needs more than a heading margin. Each
-   collapsed row carries a top rule, so consecutive ones read as one list, and
-   the next open heading looked attached to the last row rather than starting
-   something new. This closes the run and separates what follows. */
+/* A run of collapsed sections is one visual block, so the spacing rules are
+   about entering and leaving it rather than about each row.
+
+   Inside a run the rows sit flush and are separated by their top rules. That
+   is deliberate: they read as a list of headings.
+
+   Entering one needed fixing. `.collapse` has no top margin, so a collapsed
+   section following a paragraph inherited only that paragraph's 16px bottom
+   margin, exactly the gap between two paragraphs. A new section looked like a
+   continuation of the last one. */
+:not(.collapse) + .collapse {
+  margin-top: 2.75rem;
+}
+
+/* Leaving one needs the same, plus a rule to close the block, or the next open
+   heading looks attached to the final row. */
 .collapse:not(:has(+ .collapse)) {
   border-bottom: 1px solid var(--rule);
 }
 
 .collapse + :not(.collapse) {
   margin-top: 2.75rem;
+}
+
+/* Except at the very end of the body, where the sources section draws its own
+   top rule 32px below. Both together printed two horizontal lines close enough
+   to read as a mistake. The sources rule is the one that belongs there. */
+.page__body > .collapse:last-child {
+  border-bottom: 0;
 }
 
 /* Answer block — the verdict, first */
