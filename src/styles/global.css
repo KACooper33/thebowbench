@@ -290,6 +290,68 @@ a {
   }
 }
 
+/* Collapsible analysis sections.
+   The marker is drawn here rather than left to the browser, because engines
+   disagree on it and a native triangle beside a serif heading looks wrong. */
+
+.collapse {
+  border-top: 1px solid var(--rule);
+  margin-block: 0;
+}
+
+.collapse__summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.collapse__summary::-webkit-details-marker {
+  display: none;
+}
+
+/* The heading keeps its own margins, so the caret is aligned to the text
+   baseline rather than to the box. */
+.collapse__summary h2 {
+  margin-block: 1.15rem 1.15rem;
+  font-size: 1.25rem;
+}
+
+.collapse__summary::before {
+  content: '';
+  flex: none;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.12s ease;
+}
+
+.collapse[open] > .collapse__summary::before {
+  transform: rotate(-135deg);
+}
+
+.collapse__summary:hover h2 {
+  color: var(--accent);
+}
+
+.collapse__summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.collapse__body {
+  padding-bottom: 0.75rem;
+}
+
+/* The first child of an opened section sits directly under the heading, so it
+   does not need its own top margin. */
+.collapse__body > :first-child {
+  margin-top: 0;
+}
+
 /* Answer block — the verdict, first */
 
 .answer {
