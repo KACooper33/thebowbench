@@ -23,6 +23,11 @@ sources:
     url: "https://lancasterarchery.com/collections/youth-recurve-bows"
     detail: "Source for five of the six bows on this page"
     checked_on: 2026-08-14
+  - id: lancaster-youth-products
+    title: "Lancaster Archery Supply, product listings for five youth bows"
+    url: "https://lancasterarchery.com/collections/youth-recurve-bows"
+    detail: "The individual product pages for the Galaxy Bullseye 54\", Galaxy Bullseye 48\", Galaxy Little Fox, Arc Rolan Snake 50\" and Bear Marksman, read from this collection. Each is the shop's own canonical URL and each returned a live page on the date below"
+    checked_on: 2026-09-06
   - id: sportsmans-razorback
     title: "Sportsman's Warehouse, PSE Razorback Jr."
     url: "https://www.sportsmans.com/traditional-bows/pse-razorback-jr-20lbs-right-hand-tan-traditional-recurve-bow/p/1734443"

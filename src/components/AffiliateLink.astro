@@ -1,19 +1,59 @@
 ---
 /**
- * Never invent an affiliate link. CLAUDE.md rule 5.
+ * The buy link for one product.
  *
- * With no `url` set, this prints the placeholder text in plain sight. The
- * build integration counts the placeholders and reports them, but does not
- * fail, because before launch you expect many.
+ * Three states, in order of precedence.
+ *
+ * 1. `url` is a commissioned affiliate link. `rel="sponsored"` declares it to
+ *    search engines, and the FTC disclosure must be rendering on the page.
+ *    Unused as of 6 September 2026: the site has no affiliate programme.
+ * 2. `retailerUrl` is a plain link to the shop that earns nothing. No
+ *    `sponsored`, because nothing is sponsored. This is what the site uses
+ *    today.
+ * 3. Neither is set, so the placeholder prints in plain sight. Never invent a
+ *    link to avoid this. CLAUDE.md rule 5.
+ *
+ * The build integration counts the placeholders and reports them without
+ * failing, because before launch you expect some.
+ *
+ * `compact` is for the Buy column of a comparison table, where the row already
+ * names the product and the full sentence is three times the width of the cell
+ * it sits in. The visible text drops the product name; the accessible name
+ * keeps it, so a reader tabbing through links out of table context still hears
+ * which bow each link is for.
  */
 interface Props {
   merchant: string;
   placeholder: string;
   productName: string;
   url?: string | undefined;
+  retailerUrl?: string | undefined;
+  compact?: boolean | undefined;
 }
 
-const { merchant, placeholder, productName, url } = Astro.props;
+const {
+  merchant,
+  placeholder,
+  productName,
+  url,
+  retailerUrl,
+  compact = false,
+} = Astro.props;
+
+/**
+ * A link into a shop's collection or category lands on a list, not on the
+ * product. Saying "see the listings" rather than "check the price" keeps the
+ * link text honest about where the reader arrives.
+ */
+const isListing = (retailerUrl ?? '').includes('/collections/');
+
+const fullText = isListing
+  ? `Find the ${productName} in the ${merchant} listings`
+  : `Check the price of ${productName} at ${merchant}`;
+
+const shortText = isListing
+  ? `Find it in the ${merchant} listings`
+  : `Check the price at ${merchant}`;
 ---
 
 {
@@ -24,8 +64,20 @@ const { merchant, placeholder, productName, url } = Astro.props;
       rel="sponsored nofollow noopener"
       target="_blank"
       data-affiliate-link
+      aria-label={compact ? fullText : undefined}
     >
-      Check the price of {productName} at {merchant}
+      {compact ? shortText : fullText}
+    </a>
+  ) : retailerUrl ? (
+    <a
+      class="affiliate"
+      href={retailerUrl}
+      rel="nofollow noopener"
+      target="_blank"
+      data-retailer-link
+      aria-label={compact ? fullText : undefined}
+    >
+      {compact ? shortText : fullText}
     </a>
   ) : (
     <span class="affiliate affiliate--placeholder" data-affiliate-placeholder={placeholder}>

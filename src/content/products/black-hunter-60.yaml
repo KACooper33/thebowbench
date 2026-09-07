@@ -50,6 +50,7 @@ specs:
 affiliate:
   merchant: Blackhunter Archery
   placeholder: "[AFFILIATE: Black Hunter 60 Take Down]"
+  retailer_url: "https://blackhunterarchery.com/collections/bows"
 limitation: The listing does not claim ILF for this model, unlike the maker's own ILF bow, so replacement limbs are not confirmed to come from the wider market.
 suits: An archer who wants the cheapest complete takedown bow here, with accessories included, and does not need a confirmed upgrade path.
 tradeoff: The Black Hunter 60" Take Down Recurve Bow is $60 less than the maker's ILF model and gives up the limb fitting that makes the ILF version worth the difference.

@@ -79,6 +79,7 @@ specs:
 affiliate:
   merchant: 3Rivers Archery
   placeholder: "[AFFILIATE: Ghost 62 Takedown Recurve Bow]"
+  retailer_url: "https://www.3riversarchery.com/ghost-62-recurve-bow.html"
 limitation: The lightest published draw weight is 25 lb, heavier than four other bows on this page, the listing describes no arrow rest, and the contract manufacturer behind the house brand is not named.
 suits: An archer who already draws 25 lb and wants a bamboo-core limb, a stringer in the box, and a published figure for how draw weight changes with draw length.
 tradeoff: The Ghost 62" Takedown Recurve Bow ships a stringer and publishes both a plunger hole and a stabiliser bushing, but starts at 25 lb and describes no arrow rest at all.
