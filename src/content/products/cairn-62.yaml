@@ -59,6 +59,7 @@ specs:
 affiliate:
   merchant: 3Rivers Archery
   placeholder: "[AFFILIATE: Traditional Only Cairn 62]"
+  retailer_url: "https://www.3riversarchery.com/cairn-recurve.html"
 limitation: It is the most expensive bow on this page at $199.99, the lightest published draw weight is 25 lb, and the limb fitting is proprietary, so heavier limbs come from one seller.
 suits: An archer who wants the most fully specified bow on this page, including the only published brace height, and two arrow rests in the box.
 tradeoff: The Traditional Only Cairn 62" Takedown Recurve Bow publishes more about itself than any other bow on this page, including a brace height nobody else states, and costs $100 more than the cheapest bow here.

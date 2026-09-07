@@ -38,6 +38,7 @@ specs:
 affiliate:
   merchant: Lancaster Archery Supply
   placeholder: "[AFFILIATE: Bear Marksman]"
+  retailer_url: "https://lancasterarchery.com/products/bear-marksman-youth-recurve-bow-rh-only"
 limitation: One published draw weight and no stated takedown, so there is no route to heavier limbs as a young archer grows.
 suits: An archer who already knows 23 lb suits them, and who wants the longest bow here at the second lowest price.
 tradeoff: The Bear Marksman is the longest bow on this page at 60 in and the only one sold in right hand only, with no published upgrade path.

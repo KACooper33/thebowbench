@@ -99,7 +99,30 @@ const products = defineCollection({
       merchant: z.string().min(1),
       /** An invented link cannot pass as a placeholder. CLAUDE.md rule 5. */
       placeholder: z.string().startsWith('[AFFILIATE:'),
+      /**
+       * The commissioned link. Unset everywhere as of 6 September 2026,
+       * because the site has no affiliate programme. PROJECT_PLAN.md 16.4.
+       */
       url: z.string().url().optional(),
+      /**
+       * The plain link to the shop. Earns nothing, and is not an affiliate
+       * link.
+       *
+       * A reader convinced by a page needs somewhere to go, and the site had
+       * nowhere: every buy link rendered as bracketed placeholder text. This
+       * carries the reader to the listing while the site earns no commission.
+       *
+       * Kept apart from `url` on purpose. `url` means a commission is being
+       * earned and the FTC disclosure must be showing. Overloading one field
+       * for both would make that undecidable in the component, which is the
+       * point at which a site starts making claims it cannot check.
+       *
+       * The URL must be one already cited and dated in a page's `sources`,
+       * or read and dated the day it is added. Never write one from the shape
+       * of another URL. CLAUDE.md rule 5 governs invented affiliate links; the
+       * same standard applies here.
+       */
+      retailer_url: z.string().url().optional(),
     }),
     limitation: z.string().min(1),
     suits: z.string().min(1),

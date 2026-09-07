@@ -31,6 +31,7 @@ specs:
 affiliate:
   merchant: Lancaster Archery Supply
   placeholder: "[AFFILIATE: Arc Rolan Snake 50]"
+  retailer_url: "https://lancasterarchery.com/products/arc-rolan-snake-50-recurve-bow"
 limitation: One piece and one draw weight, so nothing can be changed as a young archer grows, and the maker publishes a 26 in draw length ceiling.
 suits: Family recreation and a first bow where low cost and durability matter more than any upgrade path.
 tradeoff: The Arc Rolan Snake 50" is the most durable-sounding bow here and the one with no upgrade route at all.
