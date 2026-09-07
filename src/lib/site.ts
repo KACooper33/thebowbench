@@ -40,16 +40,20 @@ export const SITE = {
  * The comparison hubs. The URL uses the search term. The navigation label uses
  * the reader's word. PROJECT_PLAN.md section 3, naming rule.
  *
- * Phase 1 only. /strings/ and /tools/ arrive in Phase 2.
+ * Cut to one hub on 6 September 2026. PROJECT_PLAN.md section 16.3.
+ *
+ * There were seven: bows, risers, limbs, tabs, plungers, weights, arrows. The
+ * MVP keeps a section live only where the author could plausibly hold the
+ * equipment within a year, and six of the seven failed that test. Their pages
+ * are `draft: true`, not deleted, so a hub returns by adding its path back
+ * here and to NAV_GROUPS and clearing the flag on its pages.
+ *
+ * Removing a hub from this list is what actually takes it off the site.
+ * `draft: true` alone only unroutes the pages; the hub would stay in the
+ * header, and navGroups() below would throw for a hub in no group.
  */
 export const HUBS = [
-  { path: 'bows', label: 'Complete barebow setups' },
-  { path: 'risers', label: 'Risers' },
-  { path: 'limbs', label: 'Limbs' },
-  { path: 'tabs', label: 'Tabs' },
-  { path: 'plungers', label: 'Plungers' },
-  { path: 'weights', label: 'Weight systems' },
-  { path: 'arrows', label: 'Arrows' },
+  { path: 'bows', label: 'Bows' },
 ] as const;
 
 /** Any link into one of these counts as a route to a comparison page. */
@@ -58,28 +62,22 @@ export const COMPARISON_ROUTE_PREFIXES = HUBS.map((hub) => `/${hub.path}/`);
 /**
  * How the header nav is grouped.
  *
- * Seven hubs plus "Start here" made eight flat links, all competing. Grouping
- * takes the top level to five.
+ * With one hub this is a single plain link, because a group of one renders as
+ * a link rather than a menu with one child. The grouping layer stays because
+ * it costs nothing and the hubs return: the seven-hub site needed it, and the
+ * next one will.
  *
  * This is a navigation layer and nothing more. The URLs do not change and must
  * not: section 3 of the plan says the URL uses the search term while the
  * navigation label uses the reader's word. People search "barebow riser". No
- * one searches "build by component", so that phrase belongs in the menu and
- * never in a path.
+ * one searches "build by component", so a phrase like that belongs in the menu
+ * and never in a path.
  *
- * Keeping it out of the URLs also keeps it cheap. `related_hub` is set on 20
- * pages against the hub paths below, COMPARISON_ROUTE_PREFIXES derives from
- * them, and GuideLayout throws for a `related_hub` it cannot find. Regrouping
- * here touches none of that.
- *
- * A group of one renders as a plain link rather than a menu with a single
- * child. Phase 2 adds /strings/ and /tools/, which belong in Accessories.
+ * Every path here must also be in HUBS. navGroups() throws both ways: for a
+ * group naming a hub that does not exist, and for a hub that no group lists.
  */
 export const NAV_GROUPS = [
-  { label: 'Complete barebow setups', paths: ['bows'] },
-  { label: 'Build by component', paths: ['risers', 'limbs'] },
-  { label: 'Accessories', paths: ['tabs', 'plungers', 'weights'] },
-  { label: 'Arrows', paths: ['arrows'] },
+  { label: 'Bows', paths: ['bows'] },
 ] as const;
 
 export interface NavGroup {
@@ -126,6 +124,17 @@ export function navGroups(): NavGroup[] {
   return groups;
 }
 
-/** FTC requires a clear disclosure near every affiliate link. */
+/**
+ * FTC requires a clear disclosure near every affiliate link.
+ *
+ * Not rendered as of 6 September 2026. The site has no affiliate programme and
+ * no paid link, so this sentence would assert a commission that is not earned.
+ * PROJECT_PLAN.md section 16.4.
+ *
+ * Kept here, and not deleted, because the requirement returns with the first
+ * commissioned link. Restoring means uncommenting one render in
+ * BaseLayout.astro and one in ComparisonLayout.astro, and it happens BEFORE
+ * that link goes live, not after.
+ */
 export const AFFILIATE_DISCLOSURE =
   'The Bow Bench earns a commission on some links on this page. This costs you nothing and does not change which products are recommended.';

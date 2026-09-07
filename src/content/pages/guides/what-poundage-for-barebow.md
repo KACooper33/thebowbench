@@ -3,7 +3,7 @@ title: "What poundage for barebow"
 nav_label: "What poundage"
 type: guide
 description: "Neither World Archery nor USA Archery sets a draw weight limit for barebow. Where the 60 lb and 20 lb figures actually come from, what determines your poundage, and why this site will not name a number."
-related_hub: limbs
+related_hub: bows
 answer_block: "Neither World Archery nor USA Archery sets a draw weight limit for barebow. The 60 lb figure is the compound division's, and the 20 lb figure is USA Archery's Basic Compound class. This site will not tell you what poundage to draw, because that is a coaching and safety judgement. Ask a coach, and start lower than you expect."
 sources:
   - id: wa-book-3
@@ -66,7 +66,7 @@ Draw weight is the one equipment decision on this site where a wrong answer inju
 
 The right poundage depends on your draw length, your build, how often you shoot, and what you are physically starting from. None of that is visible from a web page. A coach at a club watches you draw once and knows more than any article can tell you.
 
-This is the same position the [arrow spine guide](/arrows/spine-guide/) takes, and for the same reason: publishing a formula would mean presenting a guess as this site's own finding.
+This site takes the same position on arrow spine, and for the same reason: publishing a formula would mean presenting a guess as this site's own finding.
 
 ## What actually changes the answer
 
@@ -74,7 +74,7 @@ This is the same position the [arrow spine guide](/arrows/spine-guide/) takes, a
 
 **How often you shoot.** Poundage you can manage for six arrows is not poundage you can manage for a seventy-two arrow round. Sustainable is the target, not maximum.
 
-**Your arrows.** Draw weight and arrow spine are coupled. Change poundage and your existing arrows may no longer match, which the [spine guide](/arrows/spine-guide/) covers. Budget for that before changing limbs.
+**Your arrows.** Draw weight and arrow spine are coupled. Change poundage and your existing arrows may no longer match, so budget for a new set before changing limbs.
 
 **Where you are in the sport.** Most archers move up in poundage over time. ILF limbs make that a limb purchase rather than a new bow, which is one of the practical arguments for an ILF riser.
 
@@ -82,7 +82,7 @@ This is the same position the [arrow spine guide](/arrows/spine-guide/) takes, a
 
 A useful reality check, because published limb ranges show what manufacturers expect beginners to buy.
 
-The Galaxy Bronze Star, a wood-core entry limb, is published from **16 to 40 lb** in 2 lb steps. The WNS Motive C5, a carbon-foam limb aimed a step above entry level, is published from **20 to 46 lb**. Both are on the [limbs comparison page](/limbs/carbon-vs-wood/), sourced from [Lancaster Archery Supply](#source-lancaster-limbs).
+The Galaxy Bronze Star, a wood-core entry limb, is published from **16 to 40 lb** in 2 lb steps. The WNS Motive C5, a carbon-foam limb aimed a step above entry level, is published from **20 to 46 lb**. Both figures are sourced from [Lancaster Archery Supply](#source-lancaster-limbs).
 
 Note where entry-level limbs start. The bottom of that range exists because beginners genuinely start there, including adults. Starting at 16 or 18 lb is normal, not a failure.
 

@@ -4,6 +4,7 @@ nav_label: "Limbs"
 type: hub
 description: "Barebow limbs compared by material, length, and draw weight, with published maker specifications and the sources they came from."
 updated_on: 2026-08-13
+draft: true
 ---
 
 Limbs set your draw weight, and draw weight in barebow is less regulated than most archers expect. World Archery Book 3 sets no draw weight limit for the barebow division. The 60 lb figure that circulates widely is article 9.2.1, and it applies to the compound division, not barebow.

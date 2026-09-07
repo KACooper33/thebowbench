@@ -4,7 +4,7 @@ nav_label: "Olympic recurve vs barebow"
 type: guide
 description: "Barebow is the recurve division minus the sight and stabilisers. What carries over between the two, what must come off, and the two numbers that change, quoted from World Archery Book 3 chapter 9."
 answer_block: "Barebow is the recurve division minus the sight and stabilisers. World Archery Book 3 says so directly. Your riser, limbs, arrows and tab carry over. You must remove the sight, stabilisers, clicker and any nose or lip mark on the string, move the plunger back to 2 cm, and pass the 12.2 cm ring."
-related_hub: risers
+related_hub: bows
 sources:
   - id: wa-book-3
     title: "World Archery Constitution and Rules, Book 3 Target Archery"

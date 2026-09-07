@@ -2,6 +2,15 @@
 /**
  * US law requires a clear affiliate disclosure near every affiliate link.
  * PROJECT_PLAN.md section 9. This sits high on the page, above the table.
+ *
+ * NOT RENDERED as of 6 September 2026. The site has no affiliate programme and
+ * no paid link, so this component's text would claim a commission that is not
+ * earned. PROJECT_PLAN.md section 16.4.
+ *
+ * The render is commented out in ComparisonLayout.astro, and the matching
+ * footer render in BaseLayout.astro. Restore both BEFORE the first
+ * commissioned link goes live, not after. Nothing about this file needs to
+ * change when that happens.
  */
 import { AFFILIATE_DISCLOSURE } from '../lib/site';
 ---

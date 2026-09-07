@@ -4,7 +4,7 @@ nav_label: "Barebow rules"
 type: guide
 description: "What barebow allows and what it bans, quoted from World Archery Book 3 and the NFAA equipment rules, with the article numbers."
 answer_block: "Barebow bans sights, draw check devices including clickers, stabilisers, and anything attached to the string. It permits a cushion plunger, weights, and vibration dampeners. The whole bow must pass a 12.2 cm ring with every attachment fitted. String silencers are the split: the NFAA allows them, World Archery does not."
-related_hub: plungers
+related_hub: bows
 sources:
   - id: wa-book-3
     title: "World Archery Constitution and Rules, Book 3 Target Archery"
