@@ -3,7 +3,7 @@ title: "Gap shooting vs string walking"
 nav_label: "Gap vs string walking"
 type: guide
 description: "Both aiming methods are legal in barebow, but only one needs a marked tab, and only one locks you out of the traditional and longbow divisions."
-related_hub: tabs
+related_hub: bows
 answer_block: "Both are legal in barebow. Gap shooting needs no special equipment. String walking needs a tab with crawl marks, and the rules cap what those marks may look like. String walking is banned in the traditional and longbow divisions, so the method you learn decides which divisions you can enter later."
 sources:
   - id: wa-book-3
@@ -48,7 +48,7 @@ This is the practical difference, and it is the reason this page sits under tabs
 
 The rules cap what those marks may be. [Article 9.3.7](#source-wa-book-3) permits "marks or lines added directly to the tab or on tape placed on the face of the tab", provided they "must be uniform in size, shape and colour and may have up to two different lengths". A tab with a graduated ruler printed on it, or marks in several sizes and colours, is not legal barebow equipment.
 
-The [tabs comparison page](/tabs/best-stringwalking-tabs/) covers which tabs actually publish crawl marks. Two of the three tabs compared there state the feature outright. The third, despite being a well-known barebow name, does not claim it on its listing at all, which matters a great deal if string walking is why you are buying.
+Not every tab sold for barebow publishes crawl marks. Of three tabs checked here, two state the feature outright, and the third, despite being a well-known barebow name, does not claim it on its listing at all. That matters a great deal if string walking is why you are buying, so check the listing rather than the category it sits in.
 
 ## The choice decides which divisions you can enter
 
@@ -70,7 +70,7 @@ The [barebow vs traditional guide](/guides/barebow-vs-traditional/) sets out the
 
 Which method will make you shoot better.
 
-That depends on your eyes, your draw length, the distances you shoot, and what your coach sees when you draw. It is the same reason the [poundage guide](/guides/what-poundage-for-barebow/) publishes no draw weight and the [spine guide](/arrows/spine-guide/) computes no spine.
+That depends on your eyes, your draw length, the distances you shoot, and what your coach sees when you draw. It is the same reason the [poundage guide](/guides/what-poundage-for-barebow/) publishes no draw weight.
 
 What this site can tell you is what each method costs in equipment and what it permits in competition. Both of those are written down in the rulebooks, and both are above.
 

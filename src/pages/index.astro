@@ -25,30 +25,54 @@ const comparisons = pages
     <h1>{SITE.name}</h1>
     <p class="answer__text">{SITE.tagline}</p>
 
+    {/*
+      The promise says provenance, not measurement.
+
+      It read "Measured gear data for barebow archers" until 6 September 2026,
+      when one product record out of 35 carried a measured number. The claim
+      outran the evidence, which is the fault this site exists to correct in
+      other people's writing. PROJECT_PLAN.md section 16.2.
+
+      What is claimed here is what every page actually delivers: the origin of
+      each number, the article number behind each rule, and a dash where a
+      fact is not known. Measurement upgrades this promise. It is not the
+      promise.
+    */}
     <p>
-      Measured gear data for barebow archers. Every number on this site says
-      whether it was measured on our own bench or taken from the maker.
+      Gear notes for archers who shoot without a sight. Every number here says
+      where it came from: measured on our own bench, published by the maker, or
+      stated by the retailer, with the date it was read. Every rule is quoted to
+      its article number. Where a fact is not known, the page shows a dash
+      rather than a guess.
     </p>
 
     <p><a href="/start-here/">Start here if you are new to barebow</a></p>
 
-    <nav class="page__children" aria-label="Gear">
-      <h2>Compare the gear</h2>
-      <ul>
-        {
-          HUBS.map((hub) => (
-            <li>
-              <a href={`/${hub.path}/`}>{hub.label}</a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
+    {/*
+      With one hub this list duplicates the header, so it is hidden rather than
+      rendered as a heading over a single link. Six hubs are drafted under
+      section 16.3 and return with their pages, at which point this renders
+      again with no further change.
+    */}
+    {
+      HUBS.length > 1 && (
+        <nav class="page__children" aria-label="Gear">
+          <h2>Compare the gear</h2>
+          <ul>
+            {HUBS.map((hub) => (
+              <li>
+                <a href={`/${hub.path}/`}>{hub.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
 
     {
       comparisons.length > 0 && (
         <nav class="page__children" aria-label="Comparisons">
-          <h2>Recent comparisons</h2>
+          <h2>Compare the gear</h2>
           <ul>
             {/*
               Uses `title`, not `nav_label`. Two pages share the nav label

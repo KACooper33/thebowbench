@@ -4,6 +4,7 @@ nav_label: "Tabs"
 type: hub
 description: "Barebow and stringwalking tabs compared by material, face plate, and crawl marks, with published maker specifications and the sources they came from."
 updated_on: 2026-08-13
+draft: true
 ---
 
 The tab decision that actually changes which product you need is not material or face plate. It is whether you string walk.

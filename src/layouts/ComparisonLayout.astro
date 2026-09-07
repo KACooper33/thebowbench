@@ -21,7 +21,6 @@ import BaseLayout from './BaseLayout.astro';
 import AnswerBlock from '../components/AnswerBlock.astro';
 import SpecTable from '../components/SpecTable.astro';
 import ProductBlock from '../components/ProductBlock.astro';
-import Disclosure from '../components/Disclosure.astro';
 import Faq from '../components/Faq.astro';
 import Sources from '../components/Sources.astro';
 import { HUBS } from '../lib/site';
@@ -76,7 +75,14 @@ const jsonLd = [
   <article class="page page--comparison">
     <h1>{title}</h1>
 
-    <Disclosure />
+    {/*
+      The affiliate disclosure is not rendered, because the site earns no
+      commission and the component's text says it does. PROJECT_PLAN.md
+      section 16.4. Restore this and the footer render in BaseLayout.astro
+      before the first commissioned link goes live.
+
+      <Disclosure />
+    */}
 
     {answer_block && verdict && <AnswerBlock answer={answer_block} verdict={verdict} />}
 

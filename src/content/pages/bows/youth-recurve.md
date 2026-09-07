@@ -16,7 +16,7 @@ products:
   - pse-razorback-jr
   - arc-rolan-snake-50
   - bear-marksman
-related_hub: arrows
+related_hub: bows
 sources:
   - id: lancaster-youth
     title: "Lancaster Archery Supply, youth recurve bows"
@@ -52,7 +52,7 @@ At $54.99 against $129.98 the one-piece looks like the saving. Buy two of them a
 
 Takedown means the limbs come off. It does not mean any limbs fit.
 
-Every takedown bow on this page uses its own maker's fitting, not ILF, the interchange standard used by the [risers](/risers/under-500/) and [limbs](/limbs/carbon-vs-wood/) elsewhere on this site. So heavier limbs have to come from the same maker as the riser.
+Every takedown bow on this page uses its own maker's fitting, not ILF, the interchange standard used by target risers and limbs sold as separate parts. So heavier limbs have to come from the same maker as the riser.
 
 That matters most for the PSE Razorback Jr. PSE's own store does not list this bow. The product page redirects to their homepage and their site search returns nothing for it, checked on 14 August 2026. Retailers still stock it, and the Sportsman's Warehouse listing showed it out of stock with shipping unavailable on that date.
 
@@ -135,7 +135,7 @@ The direction is worth noting too. Dacron stretches with use, which lowers brace
 
 Tiller survives that problem, because it is a difference between two limbs measured in one session at one brace height. That is why it is reported as a finding and the brace height is not.
 
-For scale, 798 g for a complete 54 inch bow with limbs is lighter than the bare [Galaxy Crescent riser](/risers/under-500/) at a published 912 g, with no limbs on it at all. A youth bow has to be light enough for a child to hold up, and this is what that looks like.
+For scale, 798 g for a complete 54 inch bow with limbs is lighter than a bare Galaxy Crescent 25" target riser at a published 912 g, with no limbs on it at all. A youth bow has to be light enough for a child to hold up, and this is what that looks like.
 
 ## Where these numbers came from
 

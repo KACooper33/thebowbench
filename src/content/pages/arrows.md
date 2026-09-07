@@ -21,6 +21,7 @@ sources:
     detail: "Source of every specification and every price on this page"
     checked_on: 2026-08-13
 updated_on: 2026-08-13
+draft: true
 ---
 
 ## Why one row of this table has more blanks than the others

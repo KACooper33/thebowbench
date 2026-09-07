@@ -4,6 +4,7 @@ nav_label: "Plungers"
 type: hub
 description: "Cushion plungers compared by adjustment type, click detents, and spring range, with published maker specifications and the sources they came from."
 updated_on: 2026-08-13
+draft: true
 ---
 
 A cushion plunger is legal in barebow and required in practice. World Archery Book 3 article 9.3.3 permits "an adjustable pressure button, pressure point or arrow plate", with the pressure point placed no further back than 2 cm from the pivot point of the grip, a tighter limit than Olympic recurve's 4 cm.

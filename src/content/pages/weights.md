@@ -26,6 +26,7 @@ sources:
     detail: "Effective 15 January 2022. The rule that permits weights and sets the 12.2 cm ring test"
     checked_on: 2026-08-13
 updated_on: 2026-08-13
+draft: true
 ---
 
 ## The ring test applies to the bow, not to the weight

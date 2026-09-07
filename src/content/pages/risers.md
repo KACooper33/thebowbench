@@ -4,6 +4,7 @@ nav_label: "Risers"
 type: hub
 description: "Barebow risers compared by mass weight, weight system, and price, with published maker specifications and the sources they came from."
 updated_on: 2026-08-13
+draft: true
 ---
 
 Mass weight is the number most gear pages lead with, and it is the least useful one on its own. A barebow archer adds weights below and above the grip to reach the balance that suits them, so the riser's own weight is only a starting point.

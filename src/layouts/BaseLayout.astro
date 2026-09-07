@@ -8,7 +8,7 @@
  * The footer holds part 9 of the comparison template: author, experience,
  * affiliate disclosure, and the last-updated date.
  */
-import { SITE, navGroups, AFFILIATE_DISCLOSURE } from '../lib/site';
+import { SITE, navGroups } from '../lib/site';
 import EmailSignup from '../components/EmailSignup.astro';
 import '../styles/global.css';
 
@@ -96,7 +96,21 @@ const documentTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
         Written by {SITE.author}. {SITE.authorBio}
       </p>
 
-      <p class="site-footer__disclosure">{AFFILIATE_DISCLOSURE}</p>
+      {/*
+        The affiliate disclosure is not rendered, because it is not true.
+
+        It reads "The Bow Bench earns a commission on some links on this page."
+        The site has no affiliate programme and no paid link, so printing that
+        in every footer asserts a fact about the site that is not the case.
+        PROJECT_PLAN.md section 16.4.
+
+        To restore it, uncomment the line below and do the same in
+        ComparisonLayout.astro. Do that BEFORE the first commissioned link goes
+        live, not after: the FTC requirement in section 9 of the plan is real
+        and it applies from the first paid link.
+
+        <p class="site-footer__disclosure">{AFFILIATE_DISCLOSURE}</p>
+      */}
 
       {
         updatedOn && (
